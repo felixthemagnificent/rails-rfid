@@ -13,9 +13,11 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
+gem 'bootstrap_form'
+gem 'rails_layout'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
-  gem 'rails_layout'
+
 end
