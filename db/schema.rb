@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141109170219) do
+ActiveRecord::Schema.define(version: 20141112024341) do
 
   create_table "check_ins", force: true do |t|
     t.string   "card_user"
     t.string   "readerSerial"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer"
   end
 
   create_table "permissions", force: true do |t|
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(version: 20141109170219) do
     t.integer  "reader_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer"
   end
 
   create_table "readers", force: true do |t|
@@ -32,6 +34,7 @@ ActiveRecord::Schema.define(version: 20141109170219) do
     t.string   "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer"
   end
 
   create_table "users", force: true do |t|
@@ -59,6 +62,7 @@ ActiveRecord::Schema.define(version: 20141109170219) do
     t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer"
   end
 
 end
